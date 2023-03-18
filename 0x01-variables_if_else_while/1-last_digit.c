@@ -1,33 +1,29 @@
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
 #include <stdio.h>
+/* betty style doc for function main goes there */
 /**
-* main - prints all possible different combinations of three digits
-* Return: Always 0 (Success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-	int n, m, l;
+	int n;
+	int m;
 
-	for (n = 48; n < 58; n++)
-	{
-	for (m = 49; m < 58; m++)
-	{
-	for (l = 50; l < 58; l++)
-	{
-	if (l > m && m > n)
-	{
-	putchar(n);
-	putchar(m);
-	putchar(l);
-		if (n != 55 || m != 56)
-		{
-		putchar(',');
-		putchar(' ');
-		}
-	}
-	}
-	}
-	}
-	putchar('\n');
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	m = n % 10;
+	if (m > 5)
+		printf("Last digit of %d is %d and is greater than 5", n, m);
+	else if (m == 0)
+		printf("Last digit of %d is %d and is 0", n, m);
+	else if (m < 6 && m != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, m);
+	printf("\n");
+
 	return (0);
 }
