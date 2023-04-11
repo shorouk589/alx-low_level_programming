@@ -45,7 +45,7 @@ int _atoi(char *s)
 }
 
 /*
- *main - multiplies two numbers
+ *main - print the name of the program
  * @argc: number of arguments
  * @argv: array of arguments
  *
