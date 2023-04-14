@@ -16,9 +16,9 @@ char *string_noconcat(char *s1, char *s2, unsigned int n)
 
 	/*check if the strings passed are null*/
 	if (s1 == NULL)
-		S1 = "";
+		s1 = "";
 	if (s2 == NULL)
-		S2 = "";
+		s2 = "";
 	/*compute the length of the strings*/
 
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
