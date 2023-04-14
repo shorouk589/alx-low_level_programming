@@ -9,7 +9,7 @@
  *
  * Return:pointer to space in memory conctaining concatened string.
  */
-char *string_noconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j, s2_length, s1_length;
