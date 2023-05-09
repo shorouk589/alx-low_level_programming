@@ -26,8 +26,8 @@ char *create_buffer(char *file)
 	return (buffer);
 }
 
-/***
- * close_file - Closes file des
+/**
+ * close_file - Closes file descriptors
  * @fd: File to be clised
  */
 void close_file(int fd)
@@ -52,7 +52,8 @@ void close_file(int fd)
  * if file_form doesnot exists - read code 98.
  * if file_to cannot be created or written - 99
  * if file_to or file_form cannot be closed - exit code 100
- */int main(int argc, char *argv[])
+ */
+int main(int argc, char *argv[])
 {
 	int from, to, r, w;
 	char *buffer;
